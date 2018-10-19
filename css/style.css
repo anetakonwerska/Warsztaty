@@ -1,0 +1,455 @@
+@font-face {
+    font-family:'Raleway';
+    src: url('../font/Raleway-Thin.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../font/Raleway-Bold.ttf');
+    font-weight: bold;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.fontRaleway {
+     font-family:'Raleway';
+ }
+
+.fontRalewayBold {
+    font-family: 'Raleway';
+    font-weight: bold;
+}
+
+.container {
+    width: 100%
+}
+.header {
+    background: black;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px 10px 40px;
+    max-width: 100%;
+    letter-spacing: 1.2px;
+}
+
+.header__logo {
+    color:white;
+    text-transform:uppercase;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+    font-family: Raleway;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav__menu{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width:350px;
+    list-style:none;
+    position:relative;
+    padding:0;
+    margin:0;
+}
+
+.nav__menu--item {
+    position: relative;
+    display: inline-block;
+}
+
+.nav__list {
+    text-align: center;
+    position: absolute;
+    border: 1px solid black;
+    border-top: 0;
+    background: black;
+    top: 100%;
+    width: 160px;
+    padding: 20px 10px 10px 10px;
+    margin-left: -45px ;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: all 0.3s linear;
+    height: 80px;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+    color: white;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: white;
+}
+
+.nav__menu--item:hover .nav__list {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.logo-highlighted {
+    color: #27C7AB;
+    font-weight: bold;
+}
+
+.container__section, .container__section2, .contact {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+   /* padding: 20px 20px 0 0; */
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+.lineHeightColor {
+    color: grey;
+    line-height: 1.4;
+}
+
+.arrow-right, .arrow-left {
+    width: 250px;
+    font-size: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.section__background  {
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(181,181,181,1) 77%, rgba(181,181,181,1) 100%);
+    padding: 40px;
+}
+
+.container__section-text {
+    padding-top: 80px;
+}
+
+.container__section-button {
+    width: 240px;
+    height: 50px;
+    background: #27C7AB;
+    color: white;
+    font-size: 24px;
+    border-radius: 10px;
+    margin-top: 40px;
+    border: 1px solid #27C7AB;
+}
+
+.container__section2 {
+    padding: 40px 30px 50px;
+
+}
+
+.container__item {
+    padding: 0 15px 0 0;
+    position: relative;
+    height: auto;
+
+}
+
+.container__section2-text {
+    padding: 20px 20px;
+    border: 1px solid black;
+    margin-left: 15px;
+    height: auto;
+    text-align: left;
+}
+
+.text {
+    font-weight: bold;
+    color: black;
+}
+
+.onPicture {
+    position: absolute;
+    bottom: 30px;
+    left: 5px;
+}
+
+.onPicture1 {
+    position: absolute;
+    bottom: 30px;
+    left: 15px;
+}
+
+.text_bkground {
+    opacity: 0.5;
+    background: #F1F1F1;
+    padding: 10px 0 30px 0;
+    height: 40px;
+    width: inherit;
+}
+
+.container__item:before {
+    width: 200px;
+    border-bottom: 8px solid #27C7AB;
+    position: relative;
+}
+
+.containeer__section2--border {
+    border: 1px solid #C2C3C2;
+    color: #C2C3C2;
+}
+
+.sign, .title:after {
+    content: "";
+    display: block;
+    width: 200px;
+    border-bottom: 8px solid #27C7AB;
+}
+
+.container__section3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* padding: 20px 20px 0 0; */
+    max-width: 100%;
+}
+.price {
+    background: #F1F1F1;
+}
+
+.pos {
+    position: relative;
+    with: 100%;
+    height: 40px;
+    top: 20px;
+    left: 40px;
+    text-align: center;
+}
+.bookmark {
+    border: 2px solid #C2C3C2;
+    position: relative;
+    width: 400px;
+    margin: 100px 30px;
+    height: 450px;
+    background: #F9F9F9;
+
+}
+.bookmark__icon, .bookmark__icon1 {
+    position: absolute;
+    border: 4px solid #C2C3C2;
+    background: white;
+    width: 70px;
+    height: 70px;
+    top: -40px;
+    border-radius: 50%;
+    left: 50%;
+    margin-left: -35px;
+}
+.bookmark__icon:after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #C2C3C2;
+    border-radius: 50%;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+
+.bookmark__icon1:after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.bookmark__title {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 40px 0;
+    color: #27C7AB;
+}
+.bookmark__button {
+    margin: 35px auto;
+    background: #27C7AB;
+    border-radius: 5px;
+    border: 1px solid #27C7AB;
+    color: white;
+    text-transform: uppercase;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+
+}
+.bookmark__desc {
+    text-align: center;
+    list-style: none outside;
+    color: #F9F9F9;
+    margin: 0;
+    padding: 1px;
+}
+
+.bkgcolor {
+    background: #C4C4C4;
+    color: #949494;
+    padding: 5px 0;
+
+}
+.bkgcolorlight {
+    background: #F1F1F1;
+    color: #949494;
+    padding: 5px 0;
+}
+.bookmark__circle {
+    position: absolute;
+    border: 4px solid #C2C3C2;
+    background: white;
+    width: 120px;
+    height: 120px;
+    top: 90px;
+    border-radius: 50%;
+    left: 35%;
+}
+.bookmark__up {
+    height: 45%;
+}
+
+.bookmark__center  {
+    height: 25%;
+
+}
+.bookmark_down {
+    height: 5%;
+}
+
+.bookmark__intoCircle {
+    position: absolute;
+    top: 120px;
+    text-align: center;
+    font-size: 24px;
+    color: #C2C3C2;
+
+}
+.bookmark__down {
+    display: flex;
+    text-align: center;
+}
+.bookmark__border {
+    border: 2px solid #27C7AB;
+}
+.bookmark__background {
+    background:  #27C7AB;
+}
+.bookmark__titlecolor {
+    color: white
+}
+.bkgwhite {
+    background: white;
+    color: #C2C3C2;
+    padding: 5px 0;
+}
+.bookmark__button--reverse {
+    background: white;
+    color: #27C7AB;
+}
+
+.bookmark__color {
+    color: #27C7AB;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px 60px 0;
+    height: 700px;
+
+}
+
+.contact__left {
+    padding-left: 30px;
+}
+.contact__right {
+    margin: 30px;
+    padding: 30px 80px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+   /* padding: 20px; */
+    color: grey;
+    text-align: left;
+}
+
+.input {
+    border: 1px solid #27C7AB;
+    opacity: 0.5;
+    color: black;
+    height: 80px;
+    margin: 20px;
+    padding-left: 10px;
+    font-size: 24px;
+
+}
+
+.size {
+    height: 250px;
+}
+
+.form__checkbox {
+    padding: 60px;
+    font-size: 24px;
+    color: grey;
+
+}
+.contact__img {
+    display: flex;
+    height: 50%;
+    width: 50%;
+    align-items: center;
+}
+
+.form__submit {
+    height: 70px;
+    max-width: 600px;
+    color: white;
+    text-transform: uppercase;
+    background: #27C7AB;
+    border-radius: 15px;
+    border: 1px solid #27C7AB;
+    font-size: 30px;
+}
+
+.container__footer {
+    font-size: 20px;
+    color: grey;
+}
+
+.container__footer, .footer__right, .footer__right--img {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 60px 20px;
+}
+.footer__right img {
+    align-items: center;
+    height: 40%;
+    width: 40%;
+    padding-right: 4px;
+
+}
